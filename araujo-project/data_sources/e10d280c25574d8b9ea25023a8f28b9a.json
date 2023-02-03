@@ -1,0 +1,10 @@
+{
+  "id" : "e10d280c25574d8b9ea25023a8f28b9a",
+  "name" : "dh-kudu",
+  "type" : "catalog",
+  "properties" : {
+    "table_filters" : [ ],
+    "catalog_type" : "kudu",
+    "kudu.masters" : "r2d3-kudu-demo-master10.r2d3-dem.a465-9q4k.cloudera.site:7051,r2d3-kudu-demo-master20.r2d3-dem.a465-9q4k.cloudera.site:7051,r2d3-kudu-demo-master30.r2d3-dem.a465-9q4k.cloudera.site:7051"
+  }
+}

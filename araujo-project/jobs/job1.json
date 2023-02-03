@@ -1,0 +1,29 @@
+{
+  "job_name" : "job1",
+  "api_endpoints" : [ ],
+  "sql" : "SELECT *\nFROM syslog_data\nWHERE severity = 3",
+  "mv_config" : {
+    "name" : "job1",
+    "retention" : 300,
+    "min_row_retention_count" : 0,
+    "recreate" : false,
+    "key_column_name" : null,
+    "api_key" : null,
+    "ignore_nulls" : false,
+    "require_restart" : false,
+    "batch_size" : 0,
+    "enabled" : false
+  },
+  "runtime_config" : {
+    "execution_mode" : "SESSION",
+    "parallelism" : 1,
+    "sample_interval" : 0,
+    "sample_count" : 100,
+    "window_size" : 100,
+    "start_with_savepoint" : false,
+    "log_config" : {
+      "type" : "LOG4J_PROPERTIES",
+      "content" : ""
+    }
+  }
+}

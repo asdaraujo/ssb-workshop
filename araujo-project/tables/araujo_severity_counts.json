@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "schema.0.data-type" : "TIMESTAMP(3) NOT NULL",
+    "schema.2.name" : "severity",
+    "schema.1.name" : "window_end",
+    "schema.4.name" : "severity_count",
+    "schema.1.data-type" : "TIMESTAMP(3) NOT NULL",
+    "schema.3.data-type" : "VARCHAR(2147483647)",
+    "connector" : "upsert-kafka: dh-kafka",
+    "schema.2.data-type" : "BIGINT NOT NULL",
+    "schema.3.name" : "severity_desc",
+    "value.format" : "json",
+    "key.format" : "json",
+    "schema.primary-key.name" : "PK_115061603",
+    "schema.primary-key.columns" : "window_start,window_end,severity",
+    "topic" : "araujo-severity-counts",
+    "schema.4.data-type" : "BIGINT NOT NULL",
+    "schema.0.name" : "window_start"
+  },
+  "type" : "ssb",
+  "table_name" : "araujo_severity_counts",
+  "transform_code_b64_encoded" : false
+}
