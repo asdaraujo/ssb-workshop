@@ -1,0 +1,13 @@
+{
+  "id" : "fa1aa8f8f4c540b58dec5a686d9f903d",
+  "name" : "edge2ai",
+  "type" : "kafka",
+  "properties" : {
+    "brokers" : "cdp.50.16.16.31.nip.io:9092",
+    "protocol" : "sasl",
+    "mechanism" : "PLAIN",
+    "username" : "test",
+    "password" : "test",
+    "ssl.truststore.location" : ""
+  }
+}
