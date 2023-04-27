@@ -1,0 +1,10 @@
+{
+  "id" : "09c064e7577f4ab7b49fab7a707c84f2",
+  "name" : "kudu",
+  "type" : "catalog",
+  "properties" : {
+    "table_filters" : [ ],
+    "catalog_type" : "kudu",
+    "kudu.masters" : "cdp.50.16.16.31.nip.io:7051"
+  }
+}
