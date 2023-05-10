@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "password" : "${ssb.env.kafka_pwd}",
+    "connector" : "jdbc",
+    "schema.2.data-type" : "TIMESTAMP(3)",
+    "schema.0.data-type" : "VARCHAR(2147483647)",
+    "schema.2.name" : "col_ts",
+    "table-name" : "abc",
+    "schema.1.name" : "col_int",
+    "url" : "REDACTER",
+    "username" : "REDACTED",
+    "schema.0.name" : "col_str",
+    "schema.1.data-type" : "INT"
+  },
+  "type" : "ssb",
+  "table_name" : "jdbc_table_1682573943",
+  "transform_code_b64_encoded" : false
+}
