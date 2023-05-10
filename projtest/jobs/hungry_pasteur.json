@@ -1,13 +1,16 @@
 {
   "job_name" : "hungry_pasteur",
   "api_endpoints" : [ ],
-  "sql" : "CREATE TABLE  `jdbc_table_1682573943` (\n  `col_str` STRING,\n  `col_int` INT,\n  `col_ts` TIMESTAMP(3)\n) WITH (\n  'connector' = 'jdbc', -- Specify what connector to use, for JDBC it must be 'jdbc'.\n  'table-name' = 'abc',\n  'url' = 'REDACTER',\n  'password' = '...',\n  'username' = 'REDACTED'\n);\n\nCREATE TABLE  `kafka_table_1682573855` (\n  `col_str` STRING,\n  `col_int` INT,\n  `col_ts` TIMESTAMP(3),\n   WATERMARK FOR `col_ts` AS col_ts - INTERVAL '5' SECOND\n) WITH (\n  'connector' = 'kafka',\n  'format' = 'json',\n  'properties.bootstrap.servers' = 'REDACTED',\n  'topic' = 'abc',\n  'properties.sasl.jaas.config' = 'REDACTED'\n);\n\n\n\n",
+  "sql" : "CREATE TABLE  `jdbc_table_1682573943` (\n  `col_str` STRING,\n  `col_int` INT,\n  `col_ts` TIMESTAMP(3)\n) WITH (\n  'connector' = '${ssb.env.kafka_pwd}', -- Specify what connector to use, for JDBC it must be 'jdbc'.\n  'table-name' = '${ssb.env.kafka_pwd}',\n  'url' = '${ssb.env.kafka_pwd}',\n  'password' = '${ssb.env.kafka_pwd}',\n  'username' = '${ssb.env.kafka_pwd}'\n);\n\nCREATE TABLE  `kafka_table_1682573855` (\n  `col_str` STRING,\n  `col_int` INT,\n  `col_ts` TIMESTAMP(3),\n   WATERMARK FOR `col_ts` AS col_ts - INTERVAL '5' SECOND\n) WITH (\n  'connector' = '${ssb.env.kafka_pwd}',\n  'format' = '${ssb.env.kafka_pwd}',\n  'properties.bootstrap.servers' = '${ssb.env.kafka_pwd}',\n  'topic' = '${ssb.env.kafka_pwd}',\n  'properties.sasl.jaas.config' = '${ssb.env.kafka_pwd}'\n);\n\n\n\n",
   "mv_config" : {
     "name" : "hungry_pasteur",
     "retention" : 300,
     "min_row_retention_count" : 0,
     "recreate" : false,
     "key_column_name" : null,
+    "column_indices_disabled" : false,
+    "indexed_columns" : [ ],
+    "not_indexed_columns" : [ ],
     "api_key" : null,
     "ignore_nulls" : false,
     "require_restart" : false,

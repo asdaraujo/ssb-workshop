@@ -6,5 +6,6 @@
     "table_filters" : [ ],
     "catalog_type" : "kudu",
     "kudu.masters" : "cdp.50.16.16.31.nip.io:7051"
-  }
+  },
+  "custom_truststore" : false
 }

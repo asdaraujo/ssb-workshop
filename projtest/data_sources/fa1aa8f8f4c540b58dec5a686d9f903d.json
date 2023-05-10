@@ -3,11 +3,11 @@
   "name" : "edge2ai",
   "type" : "kafka",
   "properties" : {
-    "brokers" : "cdp.50.16.16.31.nip.io:9092",
-    "protocol" : "sasl",
+    "brokers" : "cdp.3.226.172.148.nip.io:9092",
+    "protocol" : "sasl_plaintext",
     "mechanism" : "PLAIN",
     "username" : "test",
-    "password" : "test",
-    "ssl.truststore.location" : ""
-  }
+    "password" : "${ssb.env.kafka_pwd}"
+  },
+  "custom_truststore" : false
 }
