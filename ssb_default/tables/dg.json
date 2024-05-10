@@ -1,0 +1,17 @@
+{
+  "metadata" : {
+    "schema.watermark.0.strategy.expr" : "`col_ts` - INTERVAL '5' SECOND",
+    "connector" : "datagen",
+    "schema.2.data-type" : "TIMESTAMP(3)",
+    "schema.0.data-type" : "VARCHAR(2147483647)",
+    "schema.watermark.0.rowtime" : "col_ts",
+    "schema.watermark.0.strategy.data-type" : "TIMESTAMP(3)",
+    "schema.2.name" : "col_ts",
+    "schema.1.name" : "col_int",
+    "schema.0.name" : "col_str",
+    "schema.1.data-type" : "INT"
+  },
+  "type" : "ssb",
+  "table_name" : "dg",
+  "transform_code_b64_encoded" : false
+}
